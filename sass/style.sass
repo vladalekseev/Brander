@@ -1,0 +1,208 @@
+$text-color: #575757
+$border-color: #c5c5c5
+
+body
+  font: bold 16px 'PT Sans',Arial,sans-serif
+  color: $text-color
+  min-width: 440px
+  margin: auto
+  display: flex
+  height: 100vh
+
+
+.form
+  width: 440px
+  margin: auto
+
+.form__section
+  display: flex
+  flex-wrap: nowrap
+  height: 75px
+  line-height: 75px
+  div
+    flex: 1 1 50%
+
+.section__value
+  input,select
+    font: normal 18px 'PT Sans',Arial,sans-serif
+    color: #3d3d3d
+    height: 40px
+
+.section__value_weight,.section__value_sample
+  border-bottom: 1px solid #acacac
+
+.section__value_sample
+  background: url(../img/arrow-down.png) right 55% no-repeat
+  border-radius: 0
+
+.section__name_extra
+  color: #535353
+  
+.section__value_text
+  font: bold 14px 'PT Sans',Arial,sans-serif
+  padding-top: 10px
+  color: #e60000
+
+.section__name_switcher
+  font-size: 11px
+  font-weight: normal
+  color: #fefefe
+  display: inline-block
+  border-radius: 13px
+  background-color: #7f7f7f
+  width: 55px
+  margin-right: 5px
+  height: 30px
+  line-height: 30px
+  text-align: center
+  box-sizing: border-box
+  padding: 0 5px
+  position: relative
+
+.switcher-after
+  display: inline-block
+  position: absolute
+  top: 8%
+  left: 4%
+  width: 26px
+  height: 26px
+  border-radius: 50%
+  background-color: #fff
+.switcher-active
+  top: 8%
+  left: 49%
+
+.switcher-nope
+  margin-right: 10px
+
+.section__value_tariff
+  height: 45px
+  text-indent: 20px
+  border: 1px solid $border-color
+  border-radius: 20px
+  background: url(../img/arrow-down.png) 90% 55% no-repeat
+
+.section__tariff-info
+  position: relative
+  color: transparent
+  display: inline-block
+  width: 40px
+  height: 40px
+  line-height: 40px
+  background: url(../img/i.png) center center no-repeat
+  
+.tariff-info__tooltip
+  font-size: 14px
+  line-height: 20px
+  top: -135%
+  left: -70%
+  border-radius: 20px
+  position: absolute
+  display: inline-block
+  padding: 5px 10px
+  background-color: #f6f6f6
+  border: 1px solid #bababa
+  color: $text-color
+  visibility: hidden
+
+.section__value_status
+  @extend .section__value_tariff
+
+.section__name_term
+  line-height: 20px
+  padding: 15px 0
+
+.range-slider__range::-webkit-slider-runnable-track
+  height: 2px
+  background: #d2d2d2
+  border: none
+
+.range-slider__range::-webkit-slider-thumb
+  position: relative
+  -webkit-appearance: none
+  border: 1px solid $border-color
+  height: 38px
+  width: 90px
+  border-radius: 20px
+  background-color: #fff
+  margin-top: -19px
+
+
+.range-slider
+  position: relative
+
+.range-slider__range
+  padding: 15px 0
+  cursor: pointer
+
+.range-slider__value
+  font-size: 14px
+  pointer-events: none
+  background: url(../img/arrow.png) left center no-repeat, url(../img/arrow-l.png) right center no-repeat
+  white-space: nowrap
+  position: absolute
+  display: block
+  top: 0
+  padding: 0 10px
+  left: 50%
+  transform: translate(-50%)
+  -webkit-transform: translate(-50%)
+  -moz-transform: translate(-38%)
+
+
+
+
+.range-slider__range::-moz-range-track
+  height: 2px
+  background: #ddd
+  border: none
+
+.range-slider__range::-moz-range-thumb
+  position: relative
+  -webkit-appearance: none
+  border: 1px solid $border-color
+  height: 38px
+  width: 90px
+  border-radius: 20px
+  background-color: #fff
+  margin-top: -19px
+
+
+.range-slider__range::-ms-track
+  height: 2px
+  background: #ddd
+  border: none
+
+.range-slider__range::-ms-fill-lower
+  background: #777
+  border-radius: 10px
+
+.range-slider__range::-ms-fill-upper
+  background: #ddd
+  border-radius: 10px
+
+.range-slider__range::-ms-thumb
+  position: relative
+  -webkit-appearance: none
+  border: 1px solid $border-color
+  height: 38px
+  width: 90px
+  border-radius: 20px
+  background-color: #fff
+  margin-top: -19px
+
+.form__btn
+  margin-top: 20px
+  font: bold 16px 'PT Sans',Arial,sans-serif
+  color: #e60000
+  width: 60%
+  height: 47px
+  border-radius: 40px
+  border: 1px solid #e60000
+  transition: .5s
+  &:hover
+    box-shadow: inset 0 1px 10px #555, 0 4px 5px #999
+    color: #fff
+    background-color: #e60000
+.hidden
+  visibility: hidden

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Brander</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <form class="form">
+        <div class="form__section">
+            <div class="section__name">Вес изделия</div>
+            <div class="section__value"><input class="section__value_weight" type="text" placeholder="15г" value="15г"></div>
+        </div>
+        <div class="form__section">
+            <div class="section__name">Проба металла</div>
+            <div class="section__value">
+                <select title="Проба металла" class="section__value_sample">
+                    <option value="585">585 проба</option>
+                    <option value="925">925 проба</option>
+                    <option value="865">875 проба</option>
+                </select>
+            </div>
+        </div>
+        <div class="form__section">
+            <div class="section__name section__name_extra"><button class="section__name_switcher"><span class="switcher-after"></span><span class="switcher-nope">нет</span>да</button> Камни и вставки</div>
+            <div class="section__value section__value_text">Окончательная оценочная стоимость залога может отличаться от указанной в расчете</div>
+        </div>
+        <div class="form__section">
+            <div class="section__name">Тарифный план <button class="section__tariff-info"><span class="tariff-info__tooltip">Тарифный план </span>i</button></div>
+            <div class="section__value">
+                <select class="section__value_tariff" title="Тарифный план">
+                    <option value="Simple">«Простой»</option>
+                    <option value="Simple">«Другой»</option>
+                </select>
+            </div>
+        </div>
+        <div class="form__section">
+            <div class="section__name">Ваш дисконтный статус</div>
+            <div class="section__value">
+                <select class="section__value_status" title="Ваш дисконтный статус">
+                    <option value="without-status">Без статуса</option>
+                    <option value="status">Cтатус</option>
+                </select>
+            </div>
+        </div>
+        <div class="form__section">
+            <div class="section__name section__name_term">Срок кредитования до продления</div>
+            <div class="section__value range-slider">
+                <input class="range-slider__range" type="range" value="15" min="1" max="30" title="Срок кредитования до продления">
+                <div class="range-slider__value">0</div>
+            </div>
+        </div>
+        <button class="form__btn">Рассчитать кредит</button>
+    </form>
+
+    <script src="libs/jQuery/jquery-3.2.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
